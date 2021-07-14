@@ -33,21 +33,6 @@
 
 <!-- NAVIGATION -->
 <nav id="navigation">
-	<!-- container -->
-	<div class="container">
-		<!-- responsive-nav -->
-		<div id="responsive-nav">
-			<!-- NAV -->
-			<ul class="main-nav nav navbar-nav">
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="#">Compra</a></li>
-				<li><a href="pagar.php">Pagar</a></li>
-			</ul>
-			<!-- /NAV -->
-		</div>
-		<!-- /responsive-nav -->
-	</div>
-	<!-- /container -->
 </nav>
 <!-- /NAVIGATION -->
 
@@ -67,7 +52,7 @@
 						</div>
 						<div class="shop-body">
 							<h3>Partido<br></h3>
-							<a href="#" class="cta-btn">Comprar Ahora<i class="fa fa-arrow-circle-right"></i></a>
+							<a href="comprarB.php" class="cta-btn">Comprar Ahora<i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -81,7 +66,7 @@
 						</div>
 						<div class="shop-body">
 							<h3>Estacionamiento<br></h3>
-							<a href="#" class="cta-btn">Comprar Ahora<i class="fa fa-arrow-circle-right"></i></a>
+							<a href="comprarE.php" class="cta-btn">Comprar Ahora<i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -93,7 +78,7 @@
 	</div>
 	<!-- /SECTION -->
 
-	<!-- social -->
+	<!-- Redes: social -->
 	<?php require 'php/social.php'?>
 	<!-- /social -->
 </main>

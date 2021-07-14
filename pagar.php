@@ -1,4 +1,7 @@
 <!-- pagina de pagar -->
+
+<?php require 'php/funcionComprar.php'?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,21 +35,6 @@
 
 <!-- NAVIGATION -->
 <nav id="navigation">
-	<!-- container -->
-	<div class="container">
-		<!-- responsive-nav -->
-		<div id="responsive-nav">
-			<!-- NAV -->
-			<ul class="main-nav nav navbar-nav">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="#">Compra</a></li>
-				<li class="active"><a href="#">Pagar</a></li>
-			</ul>
-			<!-- /NAV -->
-		</div>
-		<!-- /responsive-nav -->
-	</div>
-	<!-- /container -->
 </nav>
 <!-- /NAVIGATION -->
 
@@ -79,6 +67,7 @@
 			<!-- row -->
 			<div class="row">
 
+				<!-- User Details -->
 				<div class="col-md-7">
 					<!-- Billing Details -->
 					<div class="billing-details">
@@ -111,6 +100,7 @@
 					</div>
 					<!-- /Billing Details -->
 				</div>
+				<!-- User Details -->
 
 				<!-- Order Details -->
 				<div class="col-md-5 order-details">
@@ -124,17 +114,26 @@
 						</div>
 						<div class="order-products">
 							<div class="order-col">
-								<div>1x Product Name Goes Here</div>
-								<div>$980.00</div>
+								<!-- precio tickets-->
+								<?php 
+									echo <<<EOT
+										<div>${cant}x $comprade</div>
+										<div>\$$precio</div>
+									EOT;
+								?>
 							</div>
 						</div>
 						<div class="order-col">
-							<div>Shiping</div>
-							<div><strong>FREE</strong></div>
+							<div>Cargo por servicio</div>
+							<!-- precio de servicio -->
+							<div>$<?php echo "$precio_s"; ?></div>
 						</div>
 						<div class="order-col">
 							<div><strong>TOTAL</strong></div>
-							<div><strong class="order-total">$2940.00</strong></div>
+							<div><strong class="order-total">
+								<!-- Precio Total -->
+									$<?php echo $precio+$precio_s; ?>
+								</strong></div>
 						</div>
 					</div>
 					<div class="payment-method">

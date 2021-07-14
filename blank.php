@@ -1,3 +1,4 @@
+<!-- pagina  de molde -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,21 +32,6 @@
 
 <!-- NAVIGATION -->
 <nav id="navigation">
-	<!-- container -->
-	<div class="container">
-		<!-- responsive-nav -->
-		<div id="responsive-nav">
-			<!-- NAV -->
-			<ul class="main-nav nav navbar-nav">
-				<li><a href="index.php">Inicio</a></li>
-				<li class="active"><a href="#">Compra</a></li>
-				<li><a href="#">Pagar</a></li>
-			</ul>
-			<!-- /NAV -->
-		</div>
-		<!-- /responsive-nav -->
-	</div>
-	<!-- /container -->
 </nav>
 <!-- /NAVIGATION -->
 
