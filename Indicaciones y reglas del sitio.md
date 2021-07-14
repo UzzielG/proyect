@@ -1,21 +1,22 @@
 Sitio Sticket
 
 Paginas principales(archivos):
-	* index
-	* compra estacionamiento
-	* compra boleto
-	* pagar
+	* Cndex
+	* Compra estacionamiento
+	* Compra boleto
+	* Pagar
 
 Paginas secundarias:
-	* login
-	* register
+	* Login
+	* Register
 
 Carpetas:
 
 CSS: carpeta de estilos
 JS: funcionalidad del sitio
-PHP: logica del sitio
+PHP: logica del sitio y modulos del sitio
 img y fonts: recursos adicionales
+sql: recursos de base de datos
 
 Archivos:
 
@@ -27,3 +28,20 @@ Modulos de pagina:
 <?php require 'php/social.php'?>
 <?php require 'php/footer.php'?>
 <?php require 'php/scripts.php'?>
+
+
+Transferencia de datos por formularios (compra)
+
+comprarB:
+	opcTribuna		-> opcion de tribuna
+		id=TIPO
+	opcCantidad		-> cantidad de boletos
+		id=CANT
+	comprarB		-> submit
+
+comprarE:
+	opcion			-> opcion de estacionamiento
+		id=TIPO
+	cantidad		-> cantidad de estacionamientos
+		id=CANT
+	comprarE		-> submit	

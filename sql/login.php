@@ -34,13 +34,13 @@
    		<link rel="stylesheet" href="css/estilo.css">
 	</head>
 	<body>
-		<?php require 'partials/header.php' ?>
+		<?php require 'partials/header.php' ?><!-- arreglar y poner lo que iba en esta importacion -->
 		<?php if(!empty($message)): ?>
 			<p> <? = $message ?> </p>
 		<?php endif; ?>
 
 		<h1>Entrar</h1>	
-		<span>o <a href="signup.php">Registrate</a></span>
+		<span>o <a href="registrar.php">Registrate</a></span>
 
 		<form action="login.php" method="POST">
 			<input type="email" type ="text" placeholder="Ingrese su email">

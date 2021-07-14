@@ -28,7 +28,7 @@
     <body>
 		<!-- esto que rayos es??? -->
 		<?php if(!empty($user)): ?>
-			<br> Bienvenido. <?php = $user['email']; ?> 
+			<br> Bienvenido. <?php $user['email']; ?> 
 			<br>Inicio de sesion correcto<br>
 			<a href="logout.php">
 				sesion cerrada
@@ -37,7 +37,7 @@
 			<h1>Inicia sesion o Registrate </h1>
 
 			<a href="login.php"> Entrar</a> o 
-			<a href="signup.php"> Registrate </a>
+			<a href="registrar.php"> Registrate </a>
 		<?php endif; ?> 
 	</body>
 </html>

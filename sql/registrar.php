@@ -35,7 +35,7 @@
     <h1>Registrate</h1>
     <span>o <a href="login.php">Entrar</a></span>
 
-    <form action="signup.php" method="POST">
+    <form action="registrar.php" method="POST">
       <input name="email" type="text" placeholder="Ingrese su email">
       <input name="password" type="password" placeholder="Ingrese su Contraseña">
       <input name="confirm_password" type="password" placeholder="Confirmar Contraseña">
